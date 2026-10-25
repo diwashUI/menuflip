@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* The site is light-only: stop browsers from auto-darkening it (Chrome's
+     "auto dark mode" mangles light designs and breaks text contrast). */
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Print-friendly QR card: when printing from a menu page, only the QR card
+   prints — not the nav, editor, or buttons. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #qr-print-card,
+  #qr-print-card * {
+    visibility: visible;
+  }
+  #qr-print-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+}

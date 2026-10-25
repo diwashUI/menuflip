@@ -10,8 +10,8 @@ export const SITE_URL = "https://menuflipapp.vercel.app";
 // While CHECKOUT_READY is false, Pro buttons render "Pro checkout opening
 // soon" instead of opening checkout.
 export const PADDLE_CLIENT_TOKEN = "live_93531bd281ba80072bd3c787392";
-export const PADDLE_PRICE_ID = "REPLACE_WITH_REAL_PRICE_ID";
-export const CHECKOUT_READY = false;
+export const PADDLE_PRICE_ID = "pri_01m5rhyhqdma1jqfedekq0a79z";
+export const CHECKOUT_READY = true;
 
 // Free-plan limits. Pro (per-device flag, see lib/pro.ts) lifts them.
 export const FREE_MAX_MENUS = 1;
